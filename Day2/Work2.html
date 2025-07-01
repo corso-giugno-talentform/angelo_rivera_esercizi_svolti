@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Telefoni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:3000/EbiTemp/index.html">Home</a>
+            <a href="http://127.0.0.1:3000/EbiTemp/Day1/contatti.html">Contatti</a>
+            <a href="index.html">Form</a>
+            <a href="Work2.html">Custom-Form</a>
+            <a href="Work3.html">Pagina Finale</a>
+        </nav>
+    </header>
+    <h1>Opzioni Telefono</h1>
+    <form id="fPhone" action="/salva-i-dati" method="POST" autocomplete="off">
+        <div>
+            <label for="phone">Telefono -></label>
+            <select id='phone' name='Telefono'>
+                <option value='1'>Iphone</option>
+                <option value='2'>Samsung</option>
+                <option value='3'>Xiaomi</option>
+            </select>
+        </div>
+        <div>
+            <label for="nummodel" type="number">Numero del modello -> </label>
+            <input id="nummodel" type="number" placeholder="Inserisci il numero del modello" required />
+        </div>
+        <div>
+            <label for="datemodel" type="date" value="2001-01-01">Data del modello -> </label>
+            <input id="datemodel" type="date" required />
+        </div>
+        <div>
+            <h3>Storage</h3>
+            <label for="storage" type="checkbox">64 GB </label>
+            <input class="storage" type="checkbox" name="storage" checked />
+            <label for="storage" type="checkbox">128 GB </label>
+            <input class="storage" type="checkbox" name="storage" />
+            <label for="storage" type="checkbox">256 GB </label>
+            <input class="storage" type="checkbox" name="storage" />
+            <label for="storage" type="checkbox">512 GB </label>
+            <input class="storage" type="checkbox" name="storage" />
+        </div>
+        <div>
+            <h3>Colore</h3>
+            <label for="color" type="radio">Nero </label>
+            <input type="radio" name="color" checked />
+            <label for="color" type="radio">Bianco </label>
+            <input type="radio" name="color" /><br>
+            <label for="color" type="radio">Rosso </label>
+            <input type="radio" name="color" />
+            <label for="color" type="radio">Blu </label>
+            <input type="radio" name="color" />
+        </div>
+
+    </form>
+</body>
+
+</html>

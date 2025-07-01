@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:3000/EbiTemp/index.html">Home</a>
+            <a href="http://127.0.0.1:3000/EbiTemp/Day1/contatti.html">Contatti</a>
+            <a href="Work3.html">Form</a>
+            <a href="Work2.html">Custom-Form</a>
+            <a href="Work3.html">Pagina Finale</a>
+        </nav>
+    </header>
+    <h1>Il mio form</h1>
+    <form id="fWork" action="/salva-i-dati" method="POST" autocomplete="off">
+        <div>
+            <label for="firstname" type="text">Nome -> </label>
+            <input id="firstname" type="text" placeholder="Scrivi qualcosa di Testo" />
+        </div>
+        <div>
+            <label for="lastname" type="text">Cognome -> </label>
+            <input id="lastname" type="text" placeholder="Scrivi qualcosa di Testo" />
+        </div>
+        <div>
+            <label for="phone" type="number">Telefono -> </label>
+            <input id="phone" type="number" placeholder="Scrivi qualcosa numerico" />
+        </div>
+
+        <div>
+            <label for="cv" type="file">Curriculum -> </label>
+            <input id="cv" type="file" />
+        </div>
+        <div>
+            <label for="birthday" type="date">Compleanno -> </label>
+            <input id="birthday" type="date" />
+        </div>
+        <div>
+            <label for="work" type="checkbox">Full Remote -> </label>
+            <input class="work" type="checkbox" name="marca" />
+            <label for="work" type="checkbox">Ibrido -> </label>
+            <input class="work" type="checkbox" name="marca" />
+            <label for="work" type="checkbox">In Sede -> </label>
+            <input class="work" type="checkbox" name="marca" />
+        </div>
+        <div>
+            <h3>Disponibilita Trasferimento</h3>
+            <label for="foreign1" type="radio">Si -> </label>
+            <input type="radio" name="color" />
+            <label for="foreign2" type="radio">No -> </label>
+            <input type="radio" name="color" />
+        </div>
+
+    </form>
+</body>
+
+</html>
