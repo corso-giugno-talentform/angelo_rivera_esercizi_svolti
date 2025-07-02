@@ -28,3 +28,38 @@ function datifor() {
         }
     };
 };
+
+function datiforn() {
+    const form = document.getElementById('iDati');
+    let nome = form.elements['nome'].value;
+    let cognome = form.elements['cognome'].value;
+
+    for (let i = 1; i <= 30; i++) {
+
+        if (i % 3 === 0) {
+
+            console.log('Nome -> ' + nome);
+
+            if (i % 3 === 0 && i % 5 === 0) {
+
+                console.log('Nome e Cognome-> ' + nome + ' ' + cognome);
+            }
+        }
+
+        else if (i % 5 === 0) {
+
+            console.log('Nome -> ' + cognome);
+
+            if (i % 3 === 0 && i % 5 === 0) {
+
+                console.log('Nome e Cognome-> ' + nome + ' ' + cognome);
+            }
+        }
+
+        else {
+            console.log('');
+            console.log(i);
+            console.log('');
+        }
+    }
+}
