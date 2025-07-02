@@ -49,28 +49,28 @@ function dati() {
 
     if (eta >= 0 && eta <= 12) {
         console.log('');
-        console.log('Eta -> ' + eta);
+        console.log('Bambino -> ' + eta);
         console.log('Attivita -> Nuoto');
         console.log('');
     }
 
     else if (eta >= 13 && eta <= 17) {
         console.log('');
-        console.log('Eta -> ' + eta);
+        console.log('Adolescente -> ' + eta);
         console.log('Attivita -> Calcio');
         console.log('');
     }
 
     else if (eta >= 18 && eta <= 64) {
         console.log('');
-        console.log('Eta -> ' + eta);
+        console.log('Adulto -> ' + eta);
         console.log('Attivita -> Padel');
         console.log('');
     }
 
     else if (eta >= 65 && eta <= 100) {
         console.log('');
-        console.log('Eta -> ' + eta);
+        console.log('Anziano -> ' + eta);
         console.log('Attivita -> Bocce');
         console.log('');
     }
