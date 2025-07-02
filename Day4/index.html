@@ -2,13 +2,25 @@
 <html lang="it">
 
 <head>
-    <title>Lezione JS</title>
+    <title>Lezione JS - Esercizi 5.1-5.2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <form id="iDati" action="#" autocomplete="off">
+        <h2>JS - Esercizio 5.2</h2>
+
+        <div class="inputbox">
+            <label for="eta">Inserisci la tua ETA</label>
+            <input type="number" id="eta" name="eta" min="1" max="100" required />
+        </div>
+
+        <div id="button">
+            <input type="button" onclick="dati()" value="Invia Dati" />
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
