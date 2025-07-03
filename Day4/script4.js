@@ -67,13 +67,14 @@ function paridis() {
         }
     }
 
+    for (let d of dispari) {
+        console.log('dispari:', d);
+    }
+
     for (let p of pari) {
         console.log('pari:', p);
     }
 
-    for (let d of dispari) {
-        console.log('dispari:', d);
-    }
     return;
 }
 
