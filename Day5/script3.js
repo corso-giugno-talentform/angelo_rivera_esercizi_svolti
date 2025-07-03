@@ -10,7 +10,7 @@ array_3.forEach(function (numeri, indice) {
 
 
     if (numeri > 10) {
-        conteggio.push(indice)
+        conteggio.push(indice);
     }
     return;
 })
