@@ -1,0 +1,43 @@
+body {
+    background-color: #f9cbfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    background-color: white;
+    color: indigo;
+}
+
+th {
+    width: auto;
+}
+
+.th1 {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.th2 {
+    background-color: blueviolet;
+    color: darkgrey;
+}
+
+table {
+    width: auto;
+    max-width: fit-content;
+    height: auto;
+    max-height: fit-content;
+    table-layout: fixed;
+    display: table;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px #b505d8,
+        0px 0px 10px rgb(162, 0, 255) inset;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
