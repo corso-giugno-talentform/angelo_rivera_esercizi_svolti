@@ -1,0 +1,28 @@
+img {
+    border-radius: 99%;
+    max-width: 50%;
+    box-shadow: 0px 0px 10px #f1bc0d,
+        0px 0px 10px #f1280d inset;
+}
+
+#img {
+    height: auto;
+    text-align: center;
+    margin: 1rem;
+}
+
+#container-card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #d5d813,
+        0px 0px 10px #000000 inset;
+    width: 30%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
