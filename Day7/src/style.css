@@ -8,6 +8,7 @@ body {
 td {
     background-color: white;
     color: indigo;
+    padding: 2rem;
 }
 
 th {
