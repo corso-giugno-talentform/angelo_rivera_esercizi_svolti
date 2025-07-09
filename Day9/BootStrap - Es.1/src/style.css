@@ -6,3 +6,19 @@
 p {
     font-family: 'Poppins', sans-serif;
 }
+
+.jumbotron {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #0d7bf1,
+        0px 0px 10px #edf10d inset;
+}
+
+.jumbotron h1 {
+    text-shadow: 2px 2px rgb(223, 215, 105);
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px rgb(105, 205, 223);
+}
