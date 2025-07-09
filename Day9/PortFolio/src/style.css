@@ -1,0 +1,57 @@
+:root {
+    --display-default: flex;
+    --rem-default: 1rem;
+    --justify: center;
+    --percentuale: 3%;
+}
+
+header,
+h1,
+footer {
+    padding: var(--rem-default);
+}
+
+#titolo {
+    text-align: center;
+}
+
+#about {
+    display: var(--display-default);
+    flex-direction: column;
+    align-items: var(--justify);
+    margin-top: var(--percentuale);
+}
+
+nav {
+    display: var(--display-default);
+    justify-content: space-around;
+}
+
+.img-project {
+    display: var(--display-default);
+}
+
+.projects {
+    display: var(--display-default);
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    padding: var(--rem-default);
+    margin-top: var(--percentuale);
+    gap: var(--rem-default);
+}
+
+#contacts {
+    margin-top: var(--percentuale);
+}
+
+footer {
+    display: var(--display-default);
+    justify-content: var(--justify);
+    margin-top: var(--percentuale);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
