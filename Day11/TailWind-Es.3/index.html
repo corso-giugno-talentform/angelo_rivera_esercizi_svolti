@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>I Puffi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="mx-auto flex justify-between items-center bg-gray-800 shadow-xl ring-gray-900/5">
+            <img class="mr-3 h-20 w-20"
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZ3cWdvdTJ4OHJrcjhwNGRiMnpibnpjOHNoaTlxNThjOW5zOHdkdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SYNazVYUqpCxY1HLHf/giphy.gif"
+                alt="Puffo">
+            <a class="mr-3 text-white" href="https://it.wikipedia.org/wiki/Puffi" target="_blank">Puffi</a>
+        </nav>
+    </header>
+    <main class="mx-auto">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold p-5 font-semibold">I Puffi</h1>
+            <p class="text-gray-600 mb-5">fan cosi</p>
+        </div>
+        <section>
+            <form class="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <label>Nome</label>
+                    <input class="block w-full p-2 border rounded mb-4" type="text" placeholder="Inserisci un nome">
+                    <label>Email</label>
+                    <input class="block w-full p-2 border rounded mb-4" type="email" placeholder="Inserisci E-mail">
+                    <label></label>
+                    <textarea class="block w-full p-2 border rounded mb-4" placeholder="Dicci cosa pensi"></textarea>
+                </div>
+                <div>
+                    <button class="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600">Invia dati</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
