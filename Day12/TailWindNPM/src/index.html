@@ -7,24 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://img.icons8.com/?size=100&id=XsZBRsYBZnSn&format=png&color=000000" type="image/gif"
         sizes="16x16" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="output.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="mx-auto flex justify-between items-center bg-gray-800 shadow-xl ring-gray-900/5">
-            <img class="mr-3 h-20 w-20"
-                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc292MXRqbnZpNnN2NTFhNWYwMmU5aGZqZTN5bGQ1Y2Fzdmpmc3oyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vKhKsyEFVK4IuEKzWY/giphy.gif"
-                alt="Spidey-Ciao">
-            <a class="mr-3 text-white testo-giga dscript-regular" href="https://it.wikipedia.org/wiki/Ciao"
-                target="_blank">Ciao!</a>
+            <div class="flex">
+                <img class="mr-3 h-20 w-20"
+                    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc292MXRqbnZpNnN2NTFhNWYwMmU5aGZqZTN5bGQ1Y2Fzdmpmc3oyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vKhKsyEFVK4IuEKzWY/giphy.gif"
+                    alt="Spidey-Ciao">
+                <div class="mx-5 text-white" x-data="{
+                    search: '',
+            
+                    items: ['ciao', 'Ciao', 'CIAO'],
+            
+                    get filteredItems() {
+                        return this.items.filter(
+                            i => i.startsWith(this.search)
+                        )
+                    }
+                }">
+                    <input x-model="search" placeholder="Cerca...">
+
+                    <ul>
+                        <template x-for="item in filteredItems" :key="item">
+                            <li x-text="item"></li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+            <div x-data="{ open: false }">
+                <button class="flex font-bold items-center text-white shadow p-2 rounded-lg bg-smeraldo"
+                    @click="open = ! open"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg></button>
+
+                <div x-show="open" @click.outside="open = false"> <a class="mr-3 text-white testo-giga dscript-regular"
+                        href="https://it.wikipedia.org/wiki/Ciao" target="_blank">Ciao!</a></div>
+                <div x-show="open" @click.outside="open = false"> <a class="mr-3 text-white testo-giga dscript-regular"
+                        href="https://it.wikipedia.org/wiki/Ciao" target="_blank">Ciao!</a></div>
+                <div x-show="open" @click.outside="open = false"> <a class="mr-3 text-white testo-giga dscript-regular"
+                        href="https://it.wikipedia.org/wiki/Ciao" target="_blank">Ciao!</a></div>
+            </div>
+
         </nav>
     </header>
     <main class="mx-auto text-center py-20">
-        <h1 class="testo-giga">Ciao!</h1>
-        <h1 class="dscript-regular">Ciao!</h1>
-        <h1 class="dscript-bold">Ciao!</h1>
-        <h1 class="testo-giga dscript-regular">Ciao!</h1>
+        <section class="max-w-sm mx-auto bg-white shadow-md rounded-lg p-20">
+            <div class="flex gap-10" x-data="{ count: 0 }">
+                <button class="bg-green-500 text-white px-2 rounded hover:bg-green-600"
+                    x-on:click="count++">Clicca!</button>
+
+                <p class="testo-giga">Cliccato <span class="testo-giga" x-text="count"></span> volte.</p>
+            </div>
+
+            <h1 class="dscript-regular">Ciao!</h1>
+            <h1 class="dscript-bold">Ciao!</h1>
+            <h1 class="testo-giga dscript-regular">Ciao!</h1>
+        </section>
     </main>
 </body>
 
