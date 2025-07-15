@@ -13,8 +13,9 @@
 
 <body>
     <div
-        class="bg-[url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXA2d2YwZ3dsa21rNm16ZmNubDBkaHZzeXp1M2YzNHpwY2l3ZHRudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7bcpExJj6rnjihy/giphy.gif)] bg-center bg-no-repeat bg-cover">
-        <header class="backdrop-blur-none bg-black/50 h-16 flex justify-between items-center px-70 fixed w-full">
+        class="h-100 lg:h-200 md:h-150 bg-[url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXA2d2YwZ3dsa21rNm16ZmNubDBkaHZzeXp1M2YzNHpwY2l3ZHRudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7bcpExJj6rnjihy/giphy.gif)] bg-center bg-no-repeat bg-cover">
+        <header
+            class="backdrop-blur-none bg-black/50 h-16 flex justify-between items-center px-13 lg:px-60 md:px-55 sm:px-40 fixed w-screen">
             <div class="">
                 <span class="tracking-wide text-l text-white uppercase font-semibold cursor-pointer"><a
                         href="index.html">Start
@@ -28,41 +29,46 @@
                         class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Login</a>
                 </nav>
                 <div x-data="{ open: false }" class="lg:hidden">
-                    <button class=" flex font-bold items-center text-white shadow p-2
-                    rounded-lg" @click="open = ! open">
+                    <button class="font-bold items-center text-white shadow p-2
+                    rounded-lg " @click="open = ! open">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
-                    <div x-show="open" @click.outside="open = false"><a href="register.html"
-                            class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Sign
-                            Up</a></div>
-                    <div x-show="open" @click.outside="open = false"><a href="login.html"
-                            class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Login</a></div>
+                    <div class="flex flex-col gap-2" x-show="open" @click.outside="open = false">
+                        <span><a href="register.html" class="text-gray-400 text-sm uppercase rounded font-semibold">Sign
+                                Up</a></span>
+                        <span><a href="login.html"
+                                class="text-gray-400 text-sm uppercase rounded font-semibold">Login</a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </header>
 
         <section
-            class="max-w-xxl mx-auto shadow-md mx-auto content-center text-center text-white p-50 backdrop-blur-none bg-black/20">
-            <h1 class="text-8xl font-bold py-5">One Page Wonder</h1>
-            <h2 class="text-6xl font-bold pb-15">Will Rock Your Socks Off</h2>
+            class="h-auto px-20 py-7 lg:p-50 md:px-40 md:py-18 sm:py-40 flex flex-col mx-auto shadow-md justify-center content-center text-center text-white gap-10 backdrop-blur-none bg-black/20">
+            <h1 class="text-3xl lg:text-8xl md:text-7xl sm:text-5xl font-bold py-8 sm:py-5">One Page Wonder</h1>
+            <h2 class="text-2xl lg:text-6xl md:text-6xl sm:text-4xl font-bold">Will Rock Your Socks Off
+            </h2>
             <button
-                class="bg-green-500 text-white py-6 px-14 rounded-full hover:bg-green-600 text-l uppercase cursor-pointer">Learn
+                class="mx-auto mb-10 text-sm bg-green-500 text-white w-30 h-15 lg:w-50 lg:h-20 md:w-40 md:h-20 rounded-full hover:bg-green-600 text-l uppercase cursor-pointer">Learn
                 More</button>
         </section>
     </div>
     <main class="bg-white">
-        <div class="px-90 py-5">
+        <div class="container mx-auto p-5">
             <section class="flex flex-row-reverse gap-20 my-10">
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/01.jpg"
-                        class="rounded-full w-350" alt="Green Tea">
+                        class="rounded-full w-full h-auto" alt="Green Tea">
                 </div>
                 <div class="content-center">
-                    <h2 class="text-5xl mb-5">For those about to rock...</h2>
+                    <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">For those about to
+                        rock...
+                    </h2>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
@@ -71,7 +77,7 @@
             </section>
             <section class="flex flex-row-reverse gap-20 mb-10">
                 <div class="content-center">
-                    <h2 class="text-5xl mb-5">We salute you!</h2>
+                    <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">We salute you!</h2>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
@@ -80,12 +86,12 @@
 
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/02.jpg"
-                        class="rounded-full w-350" alt="Green Tea">
+                        class="rounded-full w-full h-auto" alt="Green Tea">
                 </div>
             </section>
             <section class="flex flex-row gap-20 py-10">
                 <div class="content-center">
-                    <h2 class="text-5xl mb-5">Let there be rock!</h2>
+                    <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">Let there be rock!</h2>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
@@ -93,7 +99,7 @@
                 </div>
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/03.jpg"
-                        class="rounded-full w-350" alt="Green Tea">
+                        class="rounded-full w-full h-auto" alt="Green Tea">
                 </div>
             </section>
         </div>
