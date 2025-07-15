@@ -49,21 +49,14 @@
                     class="rounded w-110 h-110" alt="Green Tea">
             </div>
             <div class="px-35 bg-gray-100 rounded-lg text-center">
-                <h1 class="text-3xl font-semibold py-4 mb-4">Register Form</h1>
+                <h1 class="text-3xl font-semibold py-4 mb-4">Login Form</h1>
                 <form>
-                    <div class="flex flex-col justify-center gap-4">
+                    <div class="flex flex-col justify-center gap-12">
                         <input class="p-2 border-b mb-4 focus:outline-none" type="text" placeholder="Your Name">
                         <input class="p-2 border-b mb-4 focus:outline-none" type="email" placeholder="Email Address">
                         <div class="relative" x-data="{ show: false }">
                             <input class="p-2 border-b mb-4 focus:outline-none" :type="show ? 'text' : 'password'"
                                 placeholder="Password">
-                            <i @click="show = !show"
-                                class="fa absolute right-3 top-1/2 transform -translate-y-1/2 text-stone-500 cursor-pointer"
-                                :class="show ? 'fa-eye-slash' : 'fa-eye'" id="togglePassword"></i>
-                        </div>
-                        <div class="relative" x-data="{ show: false }">
-                            <input class="p-2 border-b mb-4 focus:outline-none" :type="show ? 'text' : 'password'"
-                                placeholder="Confirm Password">
                             <i @click="show = !show"
                                 class="fa absolute right-3 top-1/2 transform -translate-y-1/2 text-stone-500 cursor-pointer"
                                 :class="show ? 'fa-eye-slash' : 'fa-eye'" id="togglePassword"></i>
