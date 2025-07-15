@@ -943,6 +943,11 @@
       padding: calc(var(--spacing) * 50);
     }
   }
+  .lg\:p-51 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 51);
+    }
+  }
   .lg\:px-30 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 30);
