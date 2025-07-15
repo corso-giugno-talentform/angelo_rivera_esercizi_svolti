@@ -30,14 +30,15 @@
                 </nav>
                 <div x-data="{ open: false }" class="lg:hidden">
                     <button class="font-bold items-center text-white shadow p-2
-                    rounded-lg " @click="open = ! open">
+                    rounded-lg" @click="open = ! open">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
-                    <div class="flex flex-col gap-2" x-show="open" @click.outside="open = false">
+                    <div class="flex flex-col items-center justify-center px-4 py-2 border-1 border-white/30 rounded-lg text-white cursor-pointer"
+                        x-show="open" @click.outside="open = false">
                         <span><a href="register.html" class="text-gray-400 text-sm uppercase rounded font-semibold">Sign
                                 Up</a></span>
                         <span><a href="login.html"
@@ -49,7 +50,7 @@
         </header>
 
         <section
-            class="h-auto px-20 py-7 lg:p-51- md:px-40 md:py-18 sm:py-40 flex flex-col mx-auto shadow-md justify-center content-center text-center text-white gap-10 backdrop-blur-none bg-black/20">
+            class="h-auto px-20 py-7 lg:p-51 md:px-40 md:py-18 sm:py-40 flex flex-col mx-auto shadow-md justify-center content-center text-center text-white gap-10 backdrop-blur-none bg-black/20">
             <h1 class="text-3xl lg:text-8xl md:text-7xl sm:text-5xl font-bold py-8 sm:py-5">One Page Wonder</h1>
             <h2 class="text-2xl lg:text-6xl md:text-6xl sm:text-4xl font-bold">Will Rock Your Socks Off
             </h2>
@@ -63,13 +64,16 @@
             <section class="flex flex-row-reverse gap-20 my-10">
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/01.jpg"
-                        class="rounded-full w-full h-auto" alt="Green Tea">
+                        class="rounded-full w-500 lg:w-400 md:w-400 sm:w-500 h-auto" alt="Green Tea">
                 </div>
                 <div class="content-center">
                     <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">For those about to
                         rock...
                     </h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
+                    <p class="text-sm lg:text-lg md:text-md sm:text-base text-justify">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit. Quod
+                        aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
                     </p>
@@ -78,7 +82,8 @@
             <section class="flex flex-row-reverse gap-20 mb-10">
                 <div class="content-center">
                     <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">We salute you!</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
+                    <p class="text-sm lg:text-lg md:text-md sm:text-base text-justify text-justify">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Quod aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
                     </p>
@@ -86,20 +91,21 @@
 
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/02.jpg"
-                        class="rounded-full w-full h-auto" alt="Green Tea">
+                        class="rounded-full w-500 lg:w-400 md:w-400 sm:w-500 h-auto" alt="Green Tea">
                 </div>
             </section>
             <section class="flex flex-row gap-20 py-10">
                 <div class="content-center">
                     <h2 class="text-3xl lg:text-6xl md:text-6xl sm:text-4xl font-semibold mb-5">Let there be rock!</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid,
+                    <p class="text-sm lg:text-lg md:text-md sm:text-base text-justify text-justify">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Quod aliquid,
                         mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi
                         blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
                     </p>
                 </div>
                 <div class="">
                     <img src="https://raw.githubusercontent.com/StartBootstrap/startbootstrap-one-page-wonder/refs/heads/master/src/assets/img/03.jpg"
-                        class="rounded-full w-full h-auto" alt="Green Tea">
+                        class="rounded-full w-500 lg:w-400 md:w-400 sm:w-500 h-auto" alt="Green Tea">
                 </div>
             </section>
         </div>

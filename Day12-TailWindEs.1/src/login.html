@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <header class="backdrop-blur-none bg-black/60 h-16 flex justify-between items-center px-70 fixed w-full">
+    <header
+        class="backdrop-blur-none bg-black/50 h-16 flex justify-between items-center px-13 lg:px-60 md:px-55 sm:px-40 fixed w-screen">
         <div class="">
             <span class="tracking-wide text-l text-white uppercase font-semibold cursor-pointer"><a
                     href="index.html">Start
@@ -26,7 +27,7 @@
                 <a href="login.html" class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Login</a>
             </nav>
             <div x-data="{ open: false }" class="lg:hidden">
-                <button class=" flex font-bold items-center text-white shadow p-2
+                <button class="font-bold items-center text-white shadow p-2
                     rounded-lg" @click="open = ! open">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-5">
@@ -34,24 +35,26 @@
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </button>
-                <div x-show="open" @click.outside="open = false"><a href="register.html"
-                        class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Sign
-                        Up</a></div>
-                <div x-show="open" @click.outside="open = false"><a href="login.html"
-                        class="text-gray-400 text-sm uppercase rounded font-semibold p-2 px-3">Login</a></div>
+                <div class="flex flex-col items-center justify-center px-4 py-2 border-1 border-white/30 rounded-lg text-white cursor-pointer"
+                    x-show="open" @click.outside="open = false">
+                    <span><a href="register.html" class="text-gray-400 text-sm uppercase rounded font-semibold">Sign
+                            Up</a></span>
+                    <span><a href="login.html" class="text-gray-400 text-sm uppercase rounded font-semibold">Login</a>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
     <main class="bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%">
-        <section class="flex flex-row p-70 justify-center content-center">
+        <section class="flex lg:flex-row p-20 py-50 lg:p-70 md:p-50 sm:p-40 justify-center content-center">
             <div>
                 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXA2d2YwZ3dsa21rNm16ZmNubDBkaHZzeXp1M2YzNHpwY2l3ZHRudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7bcpExJj6rnjihy/giphy.gif"
                     class="rounded w-110 h-110" alt="Green Tea">
             </div>
-            <div class="px-35 bg-gray-100 rounded-lg text-center">
+            <div class="px-10 lg:px-35 md:px-25 sm:px-20 bg-gray-100 rounded-lg text-center">
                 <h1 class="text-3xl font-semibold py-4 mb-4">Login Form</h1>
                 <form>
-                    <div class="flex flex-col justify-center gap-12">
+                    <div class="flex flex-col justify-center gap-4">
                         <input class="p-2 border-b mb-4 focus:outline-none" type="text" placeholder="Your Name">
                         <input class="p-2 border-b mb-4 focus:outline-none" type="email" placeholder="Email Address">
                         <div class="relative" x-data="{ show: false }">
@@ -62,8 +65,8 @@
                                 :class="show ? 'fa-eye-slash' : 'fa-eye'" id="togglePassword"></i>
                         </div>
                     </div>
-                    <div class="py-5 text-center">
-                        <button class="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600">Register</button>
+                    <div class="mt-15 py-5 text-center">
+                        <button class="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600">Login</button>
                     </div>
                 </form>
             </div>
